@@ -1,0 +1,14 @@
+name: show Env variables
+
+on: 
+  workflow_dispatch: 
+
+env:
+  NAME: vandana
+  
+jobs:
+  show_env: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show plain text env 
+        run: echo "My name is ${{ env.NAME }}"
