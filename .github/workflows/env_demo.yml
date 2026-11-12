@@ -27,5 +27,5 @@ jobs:
       - name: Shows Variables
         run: echo "My Dockerhub Username is ${{ vars.DOCKERHUB_USERNAME }}"
       - name: Show the input env
-        run: echo "The seleceted env is {{ inputs.environment }}"
+        run: echo "The seleceted env is ${{ inputs.environment }}"
         
